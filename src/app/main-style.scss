@@ -1,0 +1,65 @@
+@mixin box-shadow( $horiz : 0px , $vert : 3px , $blur : 5px , $spread : 0 , $color : #cccccc ){
+  -webkit-box-shadow: $horiz $vert $blur $spread $color;
+  -moz-box-shadow: $horiz $vert $blur $spread $color;
+  box-shadow: $horiz $vert $blur $spread $color;
+}
+.navbar-inverse{
+  @include box-shadow;
+  background:#fff;
+  margin-bottom:0;
+  border:none; 
+}
+.navbar-inverse{
+	li{
+		&.active{
+			a{
+				background:#155f7e!important;
+				color:#fff!important;
+				&:hover{
+					color:#fff!important;
+				}
+			}
+		}
+		a{
+			color:#000!important;
+			text-transform:uppercase;
+			font-weight:bold;
+			&:hover{
+				color:#155f7e!important;
+			}
+		}
+	}
+	.navbar-toggle{
+		background:#000;
+		margin-top:20px;
+	}
+}
+.navbar-brand{
+	padding:0;
+	height:auto;
+}
+
+
+/*Start Main Banner*/
+.mainBanner{
+	width:100%;
+	img{
+		width:100%;
+	}
+}
+
+/*Start Footer*/
+footer{
+		text-align:center;
+	ul, .navbar-nav{
+		list-style:none;
+		margin:0 auto;
+		float:inherit;
+		li{
+			text-transform:uppercase;
+			float:inherit;
+			display:inline-block;
+			font-weight:bold;
+		}
+	}
+}
