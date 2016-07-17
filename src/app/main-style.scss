@@ -67,6 +67,7 @@ body{
 h1{
 	color:#044270;
 	font-size:32px;
+	font-family:'Open Sans Light';
 	span{
 	display:block;
 	font-size:14px;
@@ -113,6 +114,26 @@ h1{
 	}
 }
 
+//Welcome Intro
+.welcomeIntro{
+	h1{
+		font-size:36px;
+	}
+	ul{
+		li{
+			line-height:25px;
+			margin-top:10px;
+			&:first-child{
+				margin:0;
+			}
+		}
+	}
+	.btn-readmore{
+		margin:10px auto 0;
+		display:inline-block;
+	}
+}
+
 /*Start Gallery Container*/
 .galleryContainer{
 	background:url(../assets/images/gallery-bg.jpg) repeat left top;
@@ -120,8 +141,19 @@ h1{
 	color:#fff;
 	}
 	.galleryBlock{
-	background:url(../assets/images/lotus.png) no-repeat left top;
-	min-height:432px;
+		background:url(../assets/images/lotus.png) no-repeat left top;
+		min-height:432px;
+		.galleryPanel{
+			ul{
+				list-style:none;
+				margin:0;
+				padding:0;
+				li{
+				
+				}
+			}
+		}
+
 	}
 }
 .reportCard{
@@ -135,13 +167,24 @@ h1{
 		text-align:center;
 		color:#044270;
 	}
+	strong{
+		display:block;
+		font-size:24px;
+		font-family:'Open Sans bold';
+	}
+	.allocatedFunds{
+		border-top:1px solid #000;
+		margin-top:10px;
+		padding-top:5px;
+	}
+	.reportCardTitle{
+		font-size:16px;
+	}
 }
 .mlaPic{
 		@include border-radius(100%);
 		@include box-shadow(0px);
 		overflow:hidden;
-		width:85px;
-		height:85px;
 }
 .usefullLinksBlock{
 	background:#fff;

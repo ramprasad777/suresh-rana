@@ -10,6 +10,32 @@
     var vm = this;
 
     vm.awesomeThings = [];
+    vm.records=[
+    {name:'Suresh Rana',
+    'image':'assets/images/suresh-rana.jpg'
+    },
+    {name:'ram',
+    'image':'assets/images/suresh-rana.jpg'
+    },
+    {name:'ram',
+    'image':'assets/images/suresh-rana.jpg'
+    },
+    {name:'ram',
+    'image':'assets/images/suresh-rana.jpg'
+    },
+    {name:'Suresh Rana',
+    'image':'assets/images/suresh-rana.jpg'
+    },
+    {name:'ram',
+    'image':'assets/images/suresh-rana.jpg'
+    },
+    {name:'ram',
+    'image':'assets/images/suresh-rana.jpg'
+    },
+    {name:'ram',
+    'image':'assets/images/suresh-rana.jpg'
+    }
+    ]
     vm.classAnimation = '';
     vm.creationDate = 1466334639926;
     vm.showToastr = showToastr;
