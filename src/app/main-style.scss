@@ -48,6 +48,19 @@ body{
 .padd20{
 	padding:20px;
 }
+.textOrange{
+	color:#9a490a;
+}
+.textPink{
+	color:#b804ad;
+}
+.textGreen{
+	color:#1a5a01;
+}
+.textOrange, .textPink, .textGreen{
+	font-size:14px;
+	font-weight:700;
+}
 /*buttons*/
 .btn-readmore{
 	border:1px solid #be1d2c;
@@ -55,7 +68,7 @@ body{
 	text-transform:uppercase;
 	padding:10px 20px;
 	cursor:pointer;
-
+	display:inline-block;
 }
 .btn-readmore:hover{
 	color:#fff;
@@ -63,7 +76,24 @@ body{
 	border:1px solid #02415c;
 	text-decoration:none;
 }
+.btn-more{
+	border:1px solid #02415c;
+	color:#fff;
+	text-transform:uppercase;
+	padding:10px 20px;
+	cursor:pointer;
+	display:inline-block;
+}
+.btn-more:hover{
+	color:#02415c;
+	background:#fff;
+	border:1px solid #fff;
+	text-decoration:none;
+}
 /*generic classes*/
+.clear{
+	clear:both;
+}
 h1{
 	color:#044270;
 	font-size:32px;
@@ -144,6 +174,8 @@ h1{
 		background:url(../assets/images/lotus.png) no-repeat left top;
 		min-height:432px;
 		.galleryPanel{
+			overflow:hidden;
+			margin-bottom:20px;
 			ul{
 				list-style:none;
 				margin:0;
@@ -179,6 +211,15 @@ h1{
 	}
 	.reportCardTitle{
 		font-size:16px;
+	}
+	.reportCardDetails{
+		margin:20px 0 10px;
+		font-size:12px;
+		.col-xs-6{
+			.row{
+				margin-top:10px;
+			}
+		}
 	}
 }
 .mlaPic{
