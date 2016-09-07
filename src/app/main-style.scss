@@ -142,6 +142,37 @@ h1{
 	img{
 		width:100%;
 	}
+	.carousel-control.left, .carousel-control.right{
+		background-image:none;
+	}
+	#myCarousel1{
+		position:absolute;
+		left:20%;
+		bottom:20px;
+		background:#fff;
+		padding:10px;
+		.carousel-inner{
+		background:url(../assets/images/kamal.jpg) no-repeat center bottom #be1d2c;
+			.item{
+				min-height:100px;
+			}
+		}
+		h2 {
+		margin:0;
+		text-align:center;
+		color:#155f7e;
+			span{
+				display:block;
+				border-bottom:1px solid #ccc;
+				font-size:24px;
+				font-weight:800;
+				font-style:italic;
+				padding:0 0 5px;
+				margin:0 0 5px;
+				text-align:left;
+			}
+		}
+	}
 }
 
 //Welcome Intro
